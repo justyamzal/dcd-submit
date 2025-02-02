@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Dancing Script",serif;
+    src: url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+}
+
+
+@font-face {
+    font-family: "Playfair",serif;
+    src: url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&swap");
+}
+
+@font-face {
+    font-family: "Roboto",serif;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&swap");
+}
+
+@font-face {
+    font-family: "Open Sans",serif;
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+}
+
+

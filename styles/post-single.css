@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--- ROOT ---*/
+:root {
+
+    /* Theme Colors */
+    --white: #ffffff;
+    --navy: #474e93;
+    --purple: #7E5CAD;
+    --teal: #72BAA9;
+    --sage: #D5E7B5;
+    --lightblue: #dde4ff;
+
+    --green: #347928;
+    --mint: #C0EBA6;
+    --white2: #FFFBE6;
+    --yellow: #FCCD2A;
+
+    /* Fonts  */
+    --Dancing: "Dancing Script", serif;
+    --Playfair: "Playfair", serif;
+    --Roboto: "Roboto", serif;
+    --Opensans: "Open Sans", serif;
+}
+
+
+
+/*--- POST - SINGLE ---*/
+.post-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 7.5em 0 8em 1.5em;
+    align-items: flex-start;
+    
+    
+}
+
+#article {
+    flex: 3;
+    min-width: 250px;
+    padding: 20px 30px;   
+    
+}
+
+.post-wrapper article .post-title {
+    font-family: var(--Roboto);
+    
+}
+
+.post-wrapper article img {
+    padding: 20px 0;
+    max-width:100%;
+    width: 800px;
+    /* height: 500px; */
+    object-fit: cover;
+}
+
+.post-wrapper article img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
+
+.post-wrapper article section {
+    font-family: var(--Opensans);
+    font-size: 1em;
+    text-align: justify;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.post-wrapper article section h4 {
+    margin-bottom: .5em;
+}
+
+aside {
+    margin-top: 70px;
+}
+
+
+/* List Style Article  */
+#article ul {
+    list-style: square;
+    padding-left: 40px;
+    /* Add proper indentation */
+    margin: 15px 0;
+}
+
+#article ol {
+    list-style-type: decimal;
+    padding-left: 40px;
+    /* Add proper indentation */
+    margin: 15px 0;
+}
+
+/* if Nested lists */
+#article ul ul {
+    list-style-type: circle;  
+}
+
+#article li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Breakpoint for Post Page */
+@media screen and (max-width: 1200px) {
+    .post-wrapper {
+        width: 90%;
+        
+    }
+    
+}
+@media screen and (max-width: 968px) {
+    .post-wrapper {
+        flex-direction: column;
+        padding: 7.5em 1.5em 8em 1.5em;     
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .post-wrapper {
+        flex-direction: column;
+    }
+    
+    .post-wrapper .sidebar {
+        position: static;
+        order: 1; /* Moves sidebar above content on mobile */
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .post-wrapper {
+        flex-direction: column;
+    }
+    
+    .post-wrapper .sidebar {
+        width: 100%;
+        position: static;
+        order: 1; /* Moves sidebar above content on mobile */
+        margin: 0 auto;
+    }
+
+}
