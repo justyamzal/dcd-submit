@@ -417,6 +417,8 @@ section#gallery
 
     width: 100%;
     font-size: .85em;
+    font-family: var(--Opensans);
+    text-align: justify;
     margin: 5px 5px;
     line-height: 1.5;
     overflow: hidden;
